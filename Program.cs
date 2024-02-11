@@ -14,7 +14,6 @@ namespace CharacterGenerator
                 new Wizard(),
                 new Elf()
                 );
-            rpgCharacter.BuildStats();
         }
     }
 }
