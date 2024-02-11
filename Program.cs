@@ -10,10 +10,17 @@ namespace CharacterGenerator
     {
         static void Main(string[] args)
         {
+            
+            RpgCharacter rpgCharacterRanger = new RpgCharacter("aragorn",
+                new Ranger(),
+                new Elf()
+                );
+            Console.WriteLine(rpgCharacterRanger.ToString());
             RpgCharacter rpgCharacter = new RpgCharacter("gandalf",
                 new Wizard(),
                 new Elf()
                 );
+            Console.WriteLine(rpgCharacter.ToString());
         }
     }
 }
