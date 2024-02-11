@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Character_Generator
+namespace Character_Generator.Stats
 {
-    internal class Program
+    internal class Types
     {
-        static void Main(string[] args)
-        {
-        }
+    }
+    
+    public enum Modifiers
+    {
+
     }
 }

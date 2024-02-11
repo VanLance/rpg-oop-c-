@@ -1,0 +1,7 @@
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\CharacterGenerator.csproj.AssemblyReference.cache
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\CharacterGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator.exe
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator.pdb
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\bin\Debug\Character-Generator.exe.config
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\bin\Debug\Character-Generator.exe
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\bin\Debug\Character-Generator.pdb
