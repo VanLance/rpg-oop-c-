@@ -27,7 +27,7 @@ namespace CharacterGenerator
             stringBuilder.AppendLine($"Name: {Name}");
             stringBuilder.AppendLine($"Race: {Race.Name}");
             stringBuilder.AppendLine($"Archetype: {Archetype.Name}");
-            stringBuilder.AppendLine($"Stats: {Stats}");
+            //stringBuilder.AppendLine($"Stats: {Stats}");
             return stringBuilder.ToString();
         }
 
