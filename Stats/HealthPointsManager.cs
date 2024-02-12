@@ -1,11 +1,4 @@
-﻿using CharacterGenerator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CharacterGenerator.Stats
+﻿namespace CharacterGenerator.Stats
 {
     public class HealthPointsManager
     {
@@ -38,7 +31,7 @@ namespace CharacterGenerator.Stats
         private void UpdateHP()
         {
             int constitutionModifier = character.stats.StatModifier(character.stats.Constitution);
-            Total = character.archetype.HitDice + constitutionModifier;
+            Total = character.Archetype.HitDice + constitutionModifier;
         }
     }
 }

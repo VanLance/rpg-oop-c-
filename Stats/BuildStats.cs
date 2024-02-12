@@ -1,10 +1,4 @@
-﻿using CharacterGenerator.Stats;
-using CharacterGenerator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Reflection;
 
 namespace CharacterGenerator.Stats
@@ -35,10 +29,10 @@ namespace CharacterGenerator.Stats
 
         public void UpdateKeyStats(ref int currentStatIndex)
         {
-            Console.WriteLine(character.name);
+            Console.WriteLine(character.Name);
 
             FieldInfo[] statFields = typeof(Stats).GetFields();
-            foreach (StatType keyStat in character.archetype.keyStats)
+            foreach (StatType keyStat in character.Archetype.keyStats)
             {
                 foreach (FieldInfo statField in statFields)
                 {
