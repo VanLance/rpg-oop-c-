@@ -16,13 +16,12 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <!-- Top row -->
         <Border Grid.Row="0" Grid.ColumnSpan="2" Background="LightGray">
-            <TextBlock x:Name="characterName" Text="Character Name" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" />
+            <TextBlock x:Name="characterNameBlock" Text="Character Name" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" />
         </Border>
 
         <Border Grid.Row="1" Grid.Column="0" Background="Black">
-            <StackPanel Margin="10" VerticalAlignment="Center">
+            <StackPanel Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" >
                 <TextBlock x:Name="hpTextBlock" Text="HP: " Foreground="White" Margin="0,0,0,10"/>
                 <TextBlock x:Name="acTextBlock" Text="AC: " Foreground="White" Margin="0,0,0,10"/>
                 <TextBlock x:Name="strengthTextBlock" Text="Strength: " Foreground="White" Margin="0,0,0,10"/>
@@ -36,7 +35,7 @@
 
         <Border Grid.Row="1" Grid.Column="1" Background="Black">
             <StackPanel Margin="10" VerticalAlignment="Center" MaxWidth="250">
-                <TextBox x:Name="nameTextBox" Width="150" Margin="0,0,0,20" Text="Character Name: " />
+                <TextBox x:Name="nameTextBox" Width="150" Margin="0,0,0,20" Text="Character Name: "  GotFocus="ClearNameText"/>
                 <ComboBox x:Name="archetypeComboBox" Margin="0,0,0,20" SelectedIndex="0">
                     <ComboBoxItem Content="Select Archetype" IsEnabled="False"/>
                     <ComboBoxItem Content="Wizard"/>

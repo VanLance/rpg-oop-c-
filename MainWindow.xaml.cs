@@ -18,7 +18,7 @@ namespace CharacterGenerator
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window 
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
@@ -26,20 +26,81 @@ namespace CharacterGenerator
         }
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
-            // Get the selected character name from the TextBox
-            string characterName = nameTextBox.Text;
+            if (!FormValidation())
+            {
+                return;
+            }
 
-            // Get the selected archetype from the ComboBox
+            string[] characterNameArray = nameTextBox.Text.Split(':');
+            string characterName = characterNameArray[characterNameArray.Length - 1];
+
             ComboBoxItem selectedArchetypeItem = (ComboBoxItem)archetypeComboBox.SelectedItem;
             string archetype = selectedArchetypeItem?.Content.ToString();
 
-            // Get the selected race from the ComboBox
             ComboBoxItem selectedRaceItem = (ComboBoxItem)raceComboBox.SelectedItem;
             string race = selectedRaceItem?.Content.ToString();
 
-            // Display the selected data (for demonstration purposes)
             MessageBox.Show($"Character Name: {characterName}\nArchetype: {archetype}\nRace: {race}");
+
+            RpgCharacter character = CreateCharacterWithUserData(characterName, race, archetype);
+             UpdateCharacterTextDisplay(character);
+
         }
 
+        private void ClearNameText(object sender, RoutedEventArgs e)
+        {
+            TextBox nameTextBox = (TextBox)sender;
+            string characterName = nameTextBox.Text;
+            if (characterName == "Character Name: ")
+            {
+                {
+                    nameTextBox.Text = "";
+                }
+
+            }
+        }
+        
+        private bool FormValidation()
+        {
+            if( string.IsNullOrEmpty(nameTextBox.Text) || archetypeComboBox.SelectedIndex == 0 || 0  == raceComboBox.SelectedIndex )
+            {
+                MessageBox.Show("Please fill out all fields: Name, Class, Race");
+                return false;
+            }
+            return true;
+        }
+        private void UpdateCharacterTextDisplay(RpgCharacter character)
+        {
+            characterNameBlock.Text = $"{character.name}: {character.archetype.Name} {character.race.Name}";
+            hpTextBlock.Text = $"HP : {character.stats.Hp.Total}";
+            acTextBlock.Text = $"AC : {character.stats.Ac}";
+            strengthTextBlock.Text = $"Strength : {character.stats.Strength}";
+            dexterityTextBlock.Text = $"Dexterity : {character.stats.Dexterity}";
+            constitutionTextBlock.Text = $"Constituition : {character.stats.Constitution}";
+            intelligenceTextBlock.Text = $"Intelligence : {character.stats.Intelligence}";
+            wisdomTextBlock.Text = $"Wisdom : {character.stats.Wisdom}";
+            charismaTextBlock.Text = $"Charisma : {character.stats.Charisma}";
+        }
+
+        private RpgCharacter CreateCharacterWithUserData(string characterName, string race, string archetype)
+        {
+            Archetype newCharacterArchetype = archetypeMap[archetype.ToLower()]();
+            Race newCharacterRace = raceMap[race.ToLower()]();
+            return new RpgCharacter(characterName, newCharacterArchetype, newCharacterRace);
+        }
+
+        private Dictionary<string, Func<Race>> raceMap = new Dictionary<string, Func<Race>>
+        {
+            { "dwarf", () => new Dwarf() },
+            { "elf", () => new Elf() },
+            { "halfling", () => new Elf() },
+        };
+
+        private Dictionary<string, Func<Archetype>> archetypeMap = new Dictionary<string, Func<Archetype>>
+        {
+            { "wizard", () => new Wizard() },
+            { "barbarian", () => new Barbarian() },
+            { "ranger", () => new Ranger() },
+        };
     }
 }
