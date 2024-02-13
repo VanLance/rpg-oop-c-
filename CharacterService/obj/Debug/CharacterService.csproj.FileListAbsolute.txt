@@ -1,0 +1,11 @@
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\CharacterService.dll.config
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\CharacterService.dll
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\CharacterService.pdb
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\obj\Debug\CharacterService.csproj.AssemblyReference.cache
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\obj\Debug\CharacterService.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\obj\Debug\CharacterService.dll
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\obj\Debug\CharacterService.pdb
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\Character-Generator.exe
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\Character-Generator.pdb
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\Character-Generator.exe.config
+C:\Users\Dylan\source\repos\Character_Generator\CharacterService\obj\Debug\CharacterService.csproj.CopyComplete
