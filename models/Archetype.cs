@@ -1,6 +1,6 @@
 ﻿namespace CharacterGenerator
 {
-    public class Archetype
+    abstract public class Archetype
     {
         public string Name;
         public Stats.StatType[] keyStats;
@@ -11,8 +11,8 @@
     {
         public Wizard()
         {
-            Name = "wizard";
-            keyStats = new Stats.StatType[]{ Stats.StatType.Intelligence, Stats.StatType.Wisdom };
+            Name = "Wizard";
+            keyStats = new Stats.StatType[] { Stats.StatType.Intelligence, Stats.StatType.Wisdom };
             HitDice = 8;
         }
 
@@ -21,16 +21,16 @@
     {
         public Barbarian()
         {
-            Name = "barbarian";
-            keyStats = new Stats.StatType[]{ Stats.StatType.Strength, Stats.StatType.Dexterity};
+            Name = "Barbarian";
+            keyStats = new Stats.StatType[] { Stats.StatType.Strength, Stats.StatType.Dexterity };
         }
     }
     public class Ranger : Archetype
     {
         public Ranger()
         {
-            Name = "ranger";
-            keyStats = new Stats.StatType[]{ Stats.StatType.Dexterity, Stats.StatType.Constitution };
+            Name = "Ranger";
+            keyStats = new Stats.StatType[] { Stats.StatType.Dexterity, Stats.StatType.Constitution };
         }
     }
 }

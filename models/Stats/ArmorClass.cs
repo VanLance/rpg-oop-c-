@@ -2,7 +2,7 @@
 {
     internal class ArmorClass
     {
-        private int Value {  get; set; }
+        private int Value { get; set; }
         readonly private RpgCharacter character;
         public ArmorClass(RpgCharacter character)
         {
@@ -15,7 +15,7 @@
 
         private void InitialAC()
         {
-           Value = 10 + character.stats.StatModifier(character.stats.Dexterity);
+            Value = 10 + character.stats.StatModifier(character.stats.Dexterity);
             character.stats.Ac = Value;
         }
     }

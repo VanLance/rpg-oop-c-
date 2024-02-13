@@ -5,8 +5,8 @@ C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Ch
 C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\CharacterGenerator.csproj.CoreCompileInputs.cache
 C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator.exe
 C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator.pdb
-C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\MainWindow.g.cs
 C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator_MarkupCompile.cache
 C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator_MarkupCompile.lref
-C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\MainWindow.baml
 C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\Character-Generator.g.resources
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\views\MainWindow.g.cs
+C:\Users\Dylan\source\repos\Character-Generator\Character-Generator\obj\Debug\views\MainWindow.baml

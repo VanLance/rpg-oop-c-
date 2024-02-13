@@ -61,7 +61,7 @@ namespace CharacterGenerator
         }
         private void UpdateCharacterTextDisplay(RpgCharacter character)
         {
-            characterNameBlock.Text = $"{character.name}: {character.archetype.Name} {character.race.Name}";
+            characterNameBlock.Text = $"{character.Name}: {character.Archetype.Name} {character.Race.Name}";
             hpTextBlock.Text = $"HP : {character.stats.Hp.Total}";
             acTextBlock.Text = $"AC : {character.stats.Ac}";
             strengthTextBlock.Text = $"Strength : {character.stats.Strength}";

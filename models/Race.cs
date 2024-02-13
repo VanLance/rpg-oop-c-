@@ -6,7 +6,7 @@
         public string Name;
         public int Mod;
     }
-    public class Race
+    abstract public class Race
     {
         public string Name;
         public StatBuff[] StatBuffs;
