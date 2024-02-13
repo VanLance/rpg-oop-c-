@@ -54,13 +54,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Character_Generator\CharacterGenerator.csproj">
-      <Project>{E87E20A4-4B5A-4DBA-AD22-02EE0AB375D0}</Project>
-      <Name>CharacterGenerator</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <ProjectReference Include="..\CharacterConsole\CharacterConsole.csproj">
+      <Project>{e87e20a4-4b5a-4dba-ad22-02ee0ab375d0}</Project>
+      <Name>CharacterConsole</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

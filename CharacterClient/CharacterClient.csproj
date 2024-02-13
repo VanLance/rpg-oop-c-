@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>CharacterGenerator.UI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Dylan\source\repos\CharacterGenerator\.gitignore" Link=".gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CharacterGeneratorService\CharacterGeneratorService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Reference Include="System.Runtime" />
+  </ItemGroup>
+
+</Project>

@@ -10,11 +10,11 @@ namespace CharacterService
         {
             Archetype newCharacterArchetype = archetypeMap[archetype.ToLower()]();
             Race newCharacterRace = raceMap[race.ToLower()]();
-            RpgCharacter baseCharacter = new RpgCharacter(name, newCharacterArchetype, newCharacterRace);
+            CharacterGenerator.RpgCharacter baseCharacter = new CharacterGenerator.RpgCharacter(name, newCharacterArchetype, newCharacterRace);
             DTO.RpgCharacterDto character = new DTO.RpgCharacterDto(baseCharacter);
             return character;
         }
-        private Dictionary<string, Func<Race>> raceMap = new Dictionary<string, Func<Race>>
+        private Dictionary<string, Func<CharacterGenerator.Race>> raceMap = new Dictionary<string, Func<CharacterGenerator.Race>>
         {
             { "dwarf", () => new Dwarf() },
             { "elf", () => new Elf() },

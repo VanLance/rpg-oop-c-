@@ -9,3 +9,5 @@ C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\Chara
 C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\Character-Generator.pdb
 C:\Users\Dylan\source\repos\Character_Generator\CharacterService\bin\Debug\Character-Generator.exe.config
 C:\Users\Dylan\source\repos\Character_Generator\CharacterService\obj\Debug\CharacterService.csproj.CopyComplete
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterService\obj\Debug\CharacterService.csproj.AssemblyReference.cache
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterService\obj\Debug\CharacterService.csproj.CoreCompileInputs.cache
