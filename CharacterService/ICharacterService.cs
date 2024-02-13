@@ -6,6 +6,6 @@ namespace CharacterService
     internal interface ICharacterService
     {
         [OperationContract]
-        string GetCharacter(string characterName, string archetype, string race);
+        DTO.RpgCharacterDto GetCharacter(string characterName, string archetype, string race);
     }
 }

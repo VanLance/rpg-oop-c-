@@ -40,7 +40,7 @@ To use the QuestForge Character Generator:
 
 ## To Do
 
-- **Incorporate Windows Communication Foundation (WCF)**: Explore the integration of WCF to enable communication between different components of the application or with external systems. 
+- **Incorporate Windows Communication Foundation (WCF)**: Explore the integration of WCF to enable communication between different components of the application or with external systems. ( Current work on wcf-service Branch)
 
 - **Expand Character Generation Options**: Extend the character generation capabilities by adding support for additional archetypes, races, or character customization options. This could involve incorporating data from external sources, such as supplemental rulebooks or community-created content, to offer a wider variety of character creation possibilities.
 

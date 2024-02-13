@@ -13,7 +13,6 @@ namespace CharacterGenerator
 
         public RpgCharacter(string name, Archetype archetype, Race race)
         {
-
             Name = name;
             Race = race;
             Archetype = archetype;

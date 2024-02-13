@@ -6,12 +6,13 @@ namespace CharacterService
 {
     internal class CharacterService : ICharacterService
     {
-        public string GetCharacter(string name, string archetype, string race)
+        public DTO.RpgCharacterDto GetCharacter(string name, string archetype, string race)
         {
             Archetype newCharacterArchetype = archetypeMap[archetype.ToLower()]();
             Race newCharacterRace = raceMap[race.ToLower()]();
-            RpgCharacter character = new RpgCharacter(name, newCharacterArchetype, newCharacterRace);
-            return character.ToString();
+            RpgCharacter baseCharacter = new RpgCharacter(name, newCharacterArchetype, newCharacterRace);
+            DTO.RpgCharacterDto character = new DTO.RpgCharacterDto(baseCharacter);
+            return character;
         }
         private Dictionary<string, Func<Race>> raceMap = new Dictionary<string, Func<Race>>
         {
