@@ -1,7 +1,0 @@
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\obj\Debug\CharacterConsole.csproj.AssemblyReference.cache
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\obj\Debug\CharacterConsole.csproj.CoreCompileInputs.cache
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\bin\Debug\CharacterGenerator.exe.config
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\bin\Debug\CharacterGenerator.exe
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\bin\Debug\CharacterGenerator.pdb
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\obj\Debug\CharacterGenerator.exe
-C:\Users\Dylan\source\repos\CharacterGenerator\CharacterConsole\obj\Debug\CharacterGenerator.pdb

@@ -4,15 +4,14 @@ using System;
 
 namespace CharacterService
 {
-    internal class CharacterService : ICharacterService
+    public class CharacterService : ICharacterService
     {
         public DTO.RpgCharacterDto GetCharacter(string name, string archetype, string race)
         {
             Archetype newCharacterArchetype = archetypeMap[archetype.ToLower()]();
             Race newCharacterRace = raceMap[race.ToLower()]();
             RpgCharacter baseCharacter = new CharacterGenerator.RpgCharacter(name, newCharacterArchetype, newCharacterRace);
-            DTO.RpgCharacterDto character = new DTO.RpgCharacterDto(baseCharacter);
-            return character;
+            return new DTO.RpgCharacterDto(baseCharacter);
         }
         private Dictionary<string, Func<Race>> raceMap = new Dictionary<string, Func<Race>>
         {
