@@ -7,6 +7,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterClient", "..\Chara
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterGeneratorService", "..\CharacterGeneratorService\CharacterGeneratorService.csproj", "{A954519B-1990-4049-A288-614A6DD348F7}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CharacterServiceHost", "..\CharacterServiceHost\", "{3FD3451B-94E0-4FA2-927C-BD1FA6E50189}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{a954519b-1990-4049-a288-614a6dd348f7}|CharacterGeneratorService.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55888"
+		Debug.AspNetCompiler.PhysicalPath = "..\CharacterServiceHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55888\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55888"
+		Release.AspNetCompiler.PhysicalPath = "..\CharacterServiceHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55888\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55888"
+		SlnRelativePath = "..\CharacterServiceHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +44,10 @@ Global
 		{A954519B-1990-4049-A288-614A6DD348F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A954519B-1990-4049-A288-614A6DD348F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A954519B-1990-4049-A288-614A6DD348F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD3451B-94E0-4FA2-927C-BD1FA6E50189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD3451B-94E0-4FA2-927C-BD1FA6E50189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD3451B-94E0-4FA2-927C-BD1FA6E50189}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD3451B-94E0-4FA2-927C-BD1FA6E50189}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
