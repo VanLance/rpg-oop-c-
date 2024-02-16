@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = CharacterGenerator.UI
+build_property.ProjectDir = C:\Users\Dylan\source\repos\CharacterGenerator\CharacterClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

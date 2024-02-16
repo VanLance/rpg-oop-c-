@@ -36,10 +36,13 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
@@ -47,10 +50,10 @@
     <Compile Include="CharacterService.cs" />
     <Compile Include="DTO\RpgCharacterDto.cs" />
     <Compile Include="DTO\StatsDto.cs" />
-    <Compile Include="Models\Archetype.cs" />
-    <Compile Include="Models\Characters.cs" />
-    <Compile Include="Models\Race.cs" />
-    <Compile Include="Models\RpgCharacter.cs" />
+    <Compile Include="Models\Character\Archetype.cs" />
+    <Compile Include="Models\Character\Characters.cs" />
+    <Compile Include="Models\Character\Race.cs" />
+    <Compile Include="Models\Character\RpgCharacter.cs" />
     <Compile Include="Models\Stats\ArmorClass.cs" />
     <Compile Include="Models\Stats\BuildStats.cs" />
     <Compile Include="Models\Stats\HealthPointsManager.cs" />

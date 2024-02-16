@@ -1,0 +1,5 @@
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterClient\obj\Debug\netcoreapp3.1\CharacterClient.csproj.AssemblyReference.cache
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterClient\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterClient\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterClient\obj\Debug\netcoreapp3.1\CharacterClient_MarkupCompile.cache
+C:\Users\Dylan\source\repos\CharacterGenerator\CharacterClient\obj\Debug\netcoreapp3.1\CharacterClient_MarkupCompile.lref

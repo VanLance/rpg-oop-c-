@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-
+using CharacterService;
 
 
 namespace CharacterGenerator.UI;
@@ -14,7 +14,14 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        CharacterServiceClient client = new CharacterServiceClient();
+      
     }
+
+
+    private void foo() {
+
+}
     private void SubmitButton_Click(object sender, RoutedEventArgs e)
     {
         if (!FormValidation())
