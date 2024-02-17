@@ -1,4 +1,4 @@
-﻿namespace Character_Generator.Stats
+﻿namespace CharacterGenerator.Stats
 {
     internal class Types
     {

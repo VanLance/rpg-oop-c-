@@ -7,19 +7,31 @@ using System.Threading.Tasks;
 using System.Text.Json.Serialization;
 using System.Runtime.CompilerServices;
 
-namespace Character_Generator.User
+namespace CharacterGenerator.User
 {
     internal class CharacterCache<T>
     {
         private Node<T> Head;
         private Node<T> Tail;
-        private Dictionary<String, Node<T>> Hash = new Dictionary<String, Node<T>>();
+        private Dictionary<string, Node<T>> Hash = new Dictionary<string, Node<T>>();
         private Dictionary<Node<T>, string> ReverseHash = new Dictionary<Node<T>, string>();
 
         private int Capacity;
         public CharacterCache(int capacity)
         {
             Capacity = capacity;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            Node<T> node = Head;
+            while( node != null)
+            {
+                stringBuilder.Append(node.Value.ToString());
+                node = node.Next;
+            }
+            return stringBuilder.ToString();
         }
 
         public dynamic GetCharacterById(string id)
@@ -45,9 +57,11 @@ namespace Character_Generator.User
             if (oldHead == null)
             {
                 Head.Next = Tail;
+                Tail.Prev = Head;
                 return;
             }
             Head.Next = oldHead;
+            oldHead.Prev = Head;
         }
 
         private bool IsHead(Node<T> node)
@@ -59,6 +73,11 @@ namespace Character_Generator.User
         public void AddNode(T nodeValue)
         {
             Node<T> node = new Node<T>(nodeValue);
+
+            string nodeId = Guid.NewGuid().ToString();
+            Hash.Add(nodeId, node);
+            ReverseHash.Add(node, nodeId);
+
             if (Tail == null)
             {
                 Tail = node;
@@ -69,11 +88,10 @@ namespace Character_Generator.User
                 RemoveTail();
             }
             UpdateHead(node);
-            Hash.Add(Guid.NewGuid().ToString(), node);
         }
         private bool IsUnderCapacity()
         {
-            return Hash.Count < Capacity;
+            return Hash.Count <= Capacity;
         }
 
         private T RemoveTail()
@@ -82,6 +100,8 @@ namespace Character_Generator.User
             string olTailId = ReverseHash[Tail];
 
             Tail = oldTail.Prev;
+            Tail.Next = null;
+
             Hash.Remove(olTailId);
             ReverseHash.Remove(oldTail);
 

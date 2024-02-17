@@ -20,16 +20,13 @@ namespace CharacterGenerator.Stats
             UpdateKeyStats(ref currentStatIndex);
             UpdateRemainingStats(ref currentStatIndex);
             character.stats.Hp = new HealthPointsManager(character);
-            Console.WriteLine($"{character.stats.Hp.Total} Total HP");
 
             new ArmorClass(character);
 
-            Console.WriteLine($"{character.stats.Ac} Total AC");
         }
 
         public void UpdateKeyStats(ref int currentStatIndex)
         {
-            Console.WriteLine(character.Name);
 
             FieldInfo[] statFields = typeof(Stats).GetFields();
             foreach (StatType keyStat in character.Archetype.keyStats)
@@ -50,7 +47,6 @@ namespace CharacterGenerator.Stats
             FieldInfo[] fields = typeof(StatType).GetFields();
             foreach (FieldInfo statTypeField in fields)
             {
-                Console.WriteLine(statTypeField.Name);
                 FieldInfo fieldInfo = typeof(Stats).GetField(statTypeField.Name);
                 if (fieldInfo != null && Convert.ToString(fieldInfo.GetValue(character.stats)) == "0")
                 {
@@ -59,7 +55,6 @@ namespace CharacterGenerator.Stats
                 }
                 if (statTypeField.Name != "value__")
                 {
-                    Console.WriteLine(fieldInfo.GetValue(character.stats));
                 }
             }
         }
