@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\Dylan\source\repos\VanLance\rpg-oop-c-\obj\Debug\
+C:\Users\Dylan\source\repos\VanLance\rpg-oop-c-\obj\Release\
 Character_Generator
 none
 false
-DEBUG;TRACE
+TRACE
 
 1-1594666889
 
-141022928782
-16200382091
+13-717945974
+151905761359
 views\MainWindow.xaml;
 
-False
+True
 

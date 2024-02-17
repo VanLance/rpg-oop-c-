@@ -37,6 +37,9 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,17 +53,19 @@
     <Compile Include="..\..\..\..\Documents\CharacterGenerator\RPG-Character-C\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
-    <Compile Include="models\Archetype.cs" />
+    <Compile Include="models\Character\Archetype.cs" />
+    <Compile Include="models\User\Cache\CharacterCache.cs" />
+    <Compile Include="models\User\User.cs" />
     <Compile Include="views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="models\Race.cs" />
+    <Compile Include="models\Character\Race.cs" />
     <Compile Include="models\Stats\ArmorClass.cs" />
     <Compile Include="models\Stats\BuildStats.cs" />
     <Compile Include="models\Stats\HealthPointsManager.cs" />
     <Compile Include="models\Stats\RollStats.cs" />
-    <Compile Include="models\RpgCharacter.cs" />
+    <Compile Include="models\Character\RpgCharacter.cs" />
     <Compile Include="models\Stats\Stats.cs" />
     <Compile Include="models\Stats\Types.cs" />
   </ItemGroup>
@@ -72,6 +77,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
